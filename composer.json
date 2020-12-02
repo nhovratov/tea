@@ -184,6 +184,7 @@
 			"rm .eslintrc.json",
 			"rm .prettierrc.js",
 			"rm package.json",
+			"rm rector.php",
 			"rm stylelint.config.js",
 			"rm codeception.yml",
 			"rm phive.xml",
