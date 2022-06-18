@@ -60,7 +60,7 @@ final class TeaControllerTest extends UnitTestCase
      */
     public function isActionController(): void
     {
-        self::assertInstanceOf(ActionController::class, $this->subject);
+        self::markTestIncomplete('Code me!');
     }
 
     /**
@@ -68,11 +68,7 @@ final class TeaControllerTest extends UnitTestCase
      */
     public function indexActionAssignsAllTeaAsTeasToView(): void
     {
-        $teas = $this->createStub(QueryResultInterface::class);
-        $this->teaRepositoryMock->method('findAll')->willReturn($teas);
-        $this->viewMock->expects(self::once())->method('assign')->with('teas', $teas);
-
-        $this->subject->indexAction();
+        self::markTestIncomplete('Code me!');
     }
 
     /**
@@ -90,10 +86,7 @@ final class TeaControllerTest extends UnitTestCase
      */
     public function showActionAssignsPassedTeaAsTeaToView(): void
     {
-        $tea = new Tea();
-        $this->viewMock->expects(self::once())->method('assign')->with('tea', $tea);
-
-        $this->subject->showAction($tea);
+        self::markTestIncomplete('Code me!');
     }
 
     /**

@@ -20,7 +20,7 @@ final class TeaTest extends UnitTestCase
     {
         parent::setUp();
 
-        $this->subject = new Tea();
+        // @todo: build subject
     }
 
     /**
@@ -28,7 +28,7 @@ final class TeaTest extends UnitTestCase
      */
     public function isAbstractEntity(): void
     {
-        self::assertInstanceOf(AbstractEntity::class, $this->subject);
+        self::markTestIncomplete('Code me!');
     }
 
     /**
@@ -36,7 +36,7 @@ final class TeaTest extends UnitTestCase
      */
     public function getTitleInitiallyReturnsEmptyString(): void
     {
-        self::assertSame('', $this->subject->getTitle());
+        self::markTestIncomplete('Code me!');
     }
 
     /**
@@ -44,10 +44,8 @@ final class TeaTest extends UnitTestCase
      */
     public function setTitleSetsTitle(): void
     {
-        $value = 'Club-Mate';
-        $this->subject->setTitle($value);
+        self::markTestIncomplete('Code me!');
 
-        self::assertSame($value, $this->subject->getTitle());
     }
 
     /**
@@ -55,7 +53,7 @@ final class TeaTest extends UnitTestCase
      */
     public function getDescriptionInitiallyReturnsEmptyString(): void
     {
-        self::assertSame('', $this->subject->getDescription());
+        self::markTestIncomplete('Code me!');
     }
 
     /**
@@ -63,10 +61,7 @@ final class TeaTest extends UnitTestCase
      */
     public function setDescriptionSetsDescription(): void
     {
-        $value = 'Club-Mate';
-        $this->subject->setDescription($value);
-
-        self::assertSame($value, $this->subject->getDescription());
+        self::markTestIncomplete('Code me!');
     }
 
     /**
@@ -74,7 +69,7 @@ final class TeaTest extends UnitTestCase
      */
     public function getImageInitiallyReturnsNull(): void
     {
-        self::assertNull($this->subject->getImage());
+        self::markTestIncomplete('Code me!');
     }
 
     /**
@@ -82,10 +77,7 @@ final class TeaTest extends UnitTestCase
      */
     public function setImageSetsImage(): void
     {
-        $model = new FileReference();
-        $this->subject->setImage($model);
-
-        self::assertSame($model, $this->subject->getImage());
+        self::markTestIncomplete('Code me!');
     }
 
     /**

@@ -20,6 +20,7 @@ final class TeaRepositoryTest extends UnitTestCase
     {
         parent::setUp();
 
+<<<<<<< HEAD
         if (\interface_exists(ObjectManagerInterface::class)) {
             $objectManagerStub = $this->createStub(ObjectManagerInterface::class);
             // @phpstan-ignore-next-line This line is 11LTS-specific, but we're running PHPStan on TYPO3 12.
@@ -27,6 +28,9 @@ final class TeaRepositoryTest extends UnitTestCase
         } else {
             $this->subject = new TeaRepository();
         }
+=======
+        // @todo: create subject with `ObjectManagerInterface` stub
+>>>>>>> cc534d5 (Mark tests to be demonstrated during the workshop)
     }
 
     /**
@@ -34,6 +38,6 @@ final class TeaRepositoryTest extends UnitTestCase
      */
     public function isRepository(): void
     {
-        self::assertInstanceOf(Repository::class, $this->subject);
+        self::markTestIncomplete('Code me!');
     }
 }
