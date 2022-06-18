@@ -106,4 +106,10 @@ final class TeaTest extends UnitTestCase
 
         self::assertSame($value, $this->subject->getOwnerUid());
     }
+
+    // @todo: Tests for the "internalNotes" property:
+    // getInternalNotesInitiallyReturnsEmptyString
+    // setInternalNotesSetsInternalNotes
+    //
+    // after that, continue with the functional tests for the repository
 }
