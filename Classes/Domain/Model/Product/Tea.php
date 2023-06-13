@@ -19,8 +19,8 @@ class Tea extends AbstractEntity
     protected string $description = '';
 
     /**
-     * @phpstan-var \TYPO3\CMS\Extbase\Domain\Model\FileReference|LazyLoadingProxy|null
-     * @var \TYPO3\CMS\Extbase\Domain\Model\FileReference|null
+     * @var FileReference|null
+     * @phpstan-var FileReference|LazyLoadingProxy|null
      * @Lazy
      */
     protected $image;
