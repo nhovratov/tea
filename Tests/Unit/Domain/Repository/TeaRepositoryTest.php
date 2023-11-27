@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace TTN\Tea\Tests\Unit\Domain\Repository\Product;
+namespace TTN\Tea\Tests\Unit\Domain\Repository;
 
-use TTN\Tea\Domain\Repository\Product\TeaRepository;
+use TTN\Tea\Domain\Repository\TeaRepository;
 use TYPO3\CMS\Extbase\Object\ObjectManagerInterface;
 use TYPO3\CMS\Extbase\Persistence\Repository;
 use TYPO3\TestingFramework\Core\Unit\UnitTestCase;
 
 /**
- * @covers \TTN\Tea\Domain\Repository\Product\TeaRepository
+ * @covers \TTN\Tea\Domain\Repository\TeaRepository
  */
 final class TeaRepositoryTest extends UnitTestCase
 {
@@ -25,7 +25,7 @@ final class TeaRepositoryTest extends UnitTestCase
             // @phpstan-ignore-next-line This line is 11LTS-specific, but we're running PHPStan on TYPO3 12.
             $this->subject = new TeaRepository($objectManagerStub);
         } else {
-            $this->subject = new TeaRepository();
+            $this->subject = new \TTN\Tea\Domain\Repository\TeaRepository();
         }
     }
 
