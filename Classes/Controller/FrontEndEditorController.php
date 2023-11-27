@@ -94,7 +94,7 @@ class FrontEndEditorController extends ActionController
 
         $this->teaRepository->add($tea);
 
-        return $this->redirect('index');
+        return $this->redirect('index', null, null, null, null, null, 201);
     }
 
     /**
