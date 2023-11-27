@@ -39,7 +39,7 @@ final class FrontEndEditorControllerTest extends UnitTestCase
     private Context $context;
 
     /**
-     * @var \TTN\Tea\Domain\Repository\TeaRepository&MockObject
+     * @var TeaRepository&MockObject
      */
     private TeaRepository $teaRepositoryMock;
 

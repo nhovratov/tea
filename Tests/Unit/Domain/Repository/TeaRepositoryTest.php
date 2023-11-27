@@ -25,7 +25,7 @@ final class TeaRepositoryTest extends UnitTestCase
             // @phpstan-ignore-next-line This line is 11LTS-specific, but we're running PHPStan on TYPO3 12.
             $this->subject = new TeaRepository($objectManagerStub);
         } else {
-            $this->subject = new \TTN\Tea\Domain\Repository\TeaRepository();
+            $this->subject = new TeaRepository();
         }
     }
 
