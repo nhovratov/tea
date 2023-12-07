@@ -28,10 +28,10 @@ class Tea extends AbstractEntity
     private string $internalNotes;
 
     /**
-    * @var FileReference|null
-    * @phpstan-var LazyLoadingProxy|null
-    * @Extbase\ORM\Lazy
-    */
+     * @var FileReference|null
+     * @phpstan-var LazyLoadingProxy|null
+     * @Extbase\ORM\Lazy
+     */
     protected $image;
 
     // Note: We cannot use `@var` for the more specific type annotation here as this confuses the Extbase type mapper.
